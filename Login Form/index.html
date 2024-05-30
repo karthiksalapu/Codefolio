@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head> </head>
+
+<body>
+    <div class="bg-container">
+        <div id="registration-form" class="form-style">
+            <div class="form-elements">
+                <label for="username">User Name</label>
+                <br />
+                <input class="input-style" id="username" type="text" placeholder="Enter User Name" />
+            </div>
+
+            <div class="form-elements">
+                <label for="password">Password</label>
+                <br />
+                <input class="input-style" id="password" type="text" placeholder="Enter Password" />
+                <p id="passworAlert" class="error-text"></p>
+            </div>
+
+            <div class="form-elements">
+                <label for="email">Email</label>
+                <br />
+                <input class="input-style" id="email" type="text" placeholder="Optional^" />
+            </div>
+
+            <div>
+                <button type="button" class="button-style" id="register-button">Register</button>
+            </div>
+
+        </div>
+
+        <div id="autentication-form" class="nodisplay autentication-form">
+            <h1>Hello, <span id="dispalyUser"></span>. You Are Authenticated!</h1>
+            <div>
+                <button type="button" class="button-style" id="login-page-button">Login Page</button>
+                <button type="button" class="button-style" id="new-registration-button">New Registration</button>
+            </div>
+        </div>
+
+        <div id="login-form" class="form-style nodisplay ">
+            <div class="form-elements">
+                <label for="username">User Name</label>
+                <br />
+                <input class="input-style" id="user-login-username" type="text" placeholder="Enter User Name" />
+            </div>
+            <div class="form-elements">
+                <label for="password">Password</label>
+                <br />
+                <input class="input-style" id="user-login-password" type="text" placeholder="Enter Password" />
+            </div>
+            <button type="button" class="button-style" id="login-button">Login</button>
+            <button id="forgot-password" class="error-text no-bg-btn">Forgot Password?</button>
+            <p id="display-password"></p>
+
+        </div>
+    </div>
+</body>
+
+</html>
