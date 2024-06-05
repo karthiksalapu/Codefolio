@@ -29,17 +29,17 @@ registerButtonEl.addEventListener("click", function(event) {
 
     if (userNameEl.value === "") {
         alert("Enter Valid Name");
+    } else if (statusOfUserName === userNameEl.value) {
+        alert("User Already exists, try login");
+        loginForm.classList.remove("nodisplay");
+        registrationform.classList.add("nodisplay");
+        userLoginUserNameEl.textContent = userNameEl.value;
     } else if (passwordEl.value === "") {
         alert("Set A Password to register");
     } else if (passwordEl.value.length < 4) {
         alert("Password Length is too short");
         // passwordAlertEl.textContent = "password length is too short to proceed, maintain a 4 digit passcode";
         // passwordAlertEl.style.color = "red"; // throwing error taking space and form is getting wider, see that.
-    } else if (statusOfUserName === userNameEl.value) {
-        alert("User Already exists, try login");
-        loginForm.classList.remove("nodisplay");
-        registrationform.classList.add("nodisplay");
-        userLoginUserNameEl.textContent = userNameEl.value;
     } else {
         registrationform.classList.add("nodisplay");
         userDisplayEl.textContent = userNameEl.value;
